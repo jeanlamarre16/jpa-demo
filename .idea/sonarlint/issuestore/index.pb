@@ -15,3 +15,6 @@ U
 %src/main/java/fr/epsi/b3/TestJPA.java,e\6\e65b0e4af35591ce3d0ca06c2ea424a6c2a8ab25
 ^
 .src/main/java/fr/epsi/b3/entities/TestJPA.java,d\8\d8ca1d9e6a97dde89c1ad3a0475816435ce61190
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
