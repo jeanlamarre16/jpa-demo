@@ -21,8 +21,9 @@ public class Livre {
     //@ManyToMany(mappedBy = "livres")
     //private Set<Client> clients;
 
-    //@ManyToMany(mappedBy = "livres")
-    // private Set<Emprunt> emprunts;
+    @ManyToMany(mappedBy = "livres")
+    private Set<Emprunt> emprunts;
+
     public Livre() { }
 
     public Livre(int id, String titre, String auteur) {
@@ -39,13 +40,13 @@ public class Livre {
        // this.clients = clients;
     //}
 
-    //public Set<Emprunt> getEmprunts() {
-        //return emprunts;
-    //}
+    public Set<Emprunt> getEmprunts() {
+        return emprunts;
+    }
 
-    //public void setEmprunts(Set<Emprunt> emprunts) {
-      //  this.emprunts = emprunts;
-    //}
+    public void setEmprunts(Set<Emprunt> emprunts) {
+        this.emprunts = emprunts;
+    }
 
     public int getId() {
         return id;

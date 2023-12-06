@@ -3,17 +3,17 @@ package fr.epsi.b3.entities;
 import javax.persistence.*;
 import java.util.Set;
 
-//@Entity(name="COMPO")
+@Entity(name="COMPO")
 public class Compo {
-  /*  @Id
+    @Id
     @Column(name="ID")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)*/
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    //@Column(name="ID_LIV")
+    @Column(name="ID_LIV")
     private Integer idLivre;
 
-    //@Column(name="ID_EMP")
+    @Column(name="ID_EMP")
     private Integer idEmprunt;
 
     public Integer getId() {
@@ -32,30 +32,33 @@ public class Compo {
         this.livre = livre;
     }
 
-    //@ManyToOne
+    @ManyToOne
     private Livre livre;
-    public Compo() { }
 
+    // ========== Constructeur ============
+    public Compo() { }
     public Compo(Integer idLivre, Integer idEmprunt) {
         this.idLivre = idLivre;
         this.idEmprunt = idEmprunt;
     }
 
+    // ============ Getters ==============
+
     public Integer getIdLivre() {
         return idLivre;
     }
-
+    public Integer getIdEmprunt() {
+        return idEmprunt;
+    }
+    // ============ Setters ==============
+    public void setIdEmprunt(Integer idEmprunt) {
+        this.idEmprunt = idEmprunt;
+    }
     public void setIdLivre(Integer idLivre) {
         this.idLivre = idLivre;
     }
 
-    public Integer getIdEmprunt() {
-        return idEmprunt;
-    }
-
-    public void setIdEmprunt(Integer idEmprunt) {
-        this.idEmprunt = idEmprunt;
-    }
+    // =========== toString =============
 
     @Override
     public String toString() {
