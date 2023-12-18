@@ -11,8 +11,6 @@ R
 .src/main/java/fr/epsi/b3/entities/Emprunt.java,d\0\d0431ad02224a9dfc9a3a728acd32199de0416ab
 \
 ,src/main/java/fr/epsi/b3/entities/Compo.java,f\3\f3b2053c2f0d3f22efb08273c5bbd56f9ae2ccdb
-U
-%src/main/java/fr/epsi/b3/TestJPA.java,e\6\e65b0e4af35591ce3d0ca06c2ea424a6c2a8ab25
 ^
 .src/main/java/fr/epsi/b3/entities/TestJPA.java,d\8\d8ca1d9e6a97dde89c1ad3a0475816435ce61190
 :
